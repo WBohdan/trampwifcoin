@@ -12,6 +12,19 @@ import img6 from "./images2/img6.png";
 import img7 from "./images2/img7.png";
 import img8 from "./images2/img8.png";
 
+const imagePaths = [
+  "./images2/img1.png",
+  "./images2/img2.png",
+  "./images2/img3.png",
+  "./images2/img4.png",
+  "./images2/img5.png",
+  "./images2/img6.png",
+  "./images2/img7.png",
+  "./images2/img8.png"
+];
+
+const test = [img1, img2, img3, img4, img5, img6, img7, img8];
+
 const JustRelaxWidget = () => {
   useEffect(() => {
     const cards = document.querySelectorAll<HTMLDivElement>(".card");
@@ -79,13 +92,13 @@ const JustRelaxWidget = () => {
       matched = 0;
       disableDeck = false;
       cardOne = cardTwo = null;
-      const arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
+      const arr = [0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 6, 7];
       arr.sort(() => (Math.random() > 0.5 ? 1 : -1));
       cards.forEach((card, i) => {
         card.classList.remove("flip");
         const imgTag = card.querySelector<HTMLImageElement>(".back-view img");
         if (imgTag) {
-          imgTag.src = `/src/modules/header/widgets/JustRelaxWidget/images2/img${arr[i]}.png`;
+          imgTag.src = test[arr[i]];
         }
         card.addEventListener("click", handleCardClick);
       });
