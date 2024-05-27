@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "scss/at-if-no-null": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/dollar-variable-colon-space-after": null,
+    "color-function-notation": null,
+    "alpha-value-notation": "number",
+    "length-zero-no-unit": null
+  }
+}

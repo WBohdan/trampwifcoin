@@ -1,0 +1,82 @@
+@import "../../styles/shared.scss";
+
+.textfield {
+  position: relative;
+  display: block;
+
+  &__label {
+    @include text_medium_regular;
+    color: $text-main;
+    margin-bottom: 8px;
+  }
+
+  &__main {
+    border: none;
+    outline: none;
+    background-color: $white;
+    width: 100%;
+    height: 48px;
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: 1px solid $dark-gray;
+    @include text_large_regular;
+
+    &::placeholder {
+      @include text_large_regular;
+      color: $gray;
+    }
+
+    &:focus{
+      border: 2px solid $links;
+    }
+
+    &--textarea {
+      height: 140px;
+      resize: none;
+      @include text_medium_regular;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &--password {
+      padding-right: 60px !important;
+    }
+
+    &--error {
+      border-color: $red;
+    }
+  }
+
+  &__show-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    @include text_small_bold;
+    cursor: pointer;
+
+    & svg{
+      margin-top: 5px;
+    }
+  }
+
+  &__limit {
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    @include text_x_small_regular;
+    color: $dark-gray
+  }
+
+  &__error{
+    @include text_small_regular;
+    color: $red;
+    margin-top: 5px;
+  }
+}

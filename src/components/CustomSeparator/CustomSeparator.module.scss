@@ -1,0 +1,18 @@
+@import '../../styles/shared.scss';
+
+.customSeparator {
+    display: flex;
+    align-items: center;
+
+    &__line {
+        flex: 1;
+        height: 1px;
+        background-color: $medium-gray;
+    }
+
+    & p {
+        @include text_small_regular;
+        color: $dark-gray;
+        margin: 0 15px;
+    }
+}

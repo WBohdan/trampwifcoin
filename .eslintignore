@@ -1,0 +1,13 @@
+node_modules
+.next/
+.husky/
+coverage
+serviceWorker.ts
+react-app-env.d.ts
+scripts/
+build/
+.babelrc
+.vite.config.js
+main.tsx
+vite-env.d.ts
+vite.config.ts

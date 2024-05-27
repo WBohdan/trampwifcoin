@@ -1,0 +1,68 @@
+@import '../../../../styles/shared.scss';
+
+.stickerPacksWidget {
+    width: 100vw;
+    background-color: $bgBrown;
+    padding: 100px 0;
+
+    &__title {
+        color: $white;
+        font-size: 64px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        margin-top: 50px;
+        gap: 20px;
+        margin: 50px 7vw 0;
+    }
+
+    &__item{
+        // height: 269px;
+        aspect-ratio: 1 / 1;
+        background-color: $white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        img{
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 765px) {
+    .stickerPacksWidget {
+        &__content{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .stickerPacksWidget {
+        &__content{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .stickerPacksWidget {
+        padding: 50px 0;
+
+        &__title {
+            font-size: 45px;
+        }
+
+        &__content{
+            margin: 30px 7vw 0;
+        }
+    }
+}

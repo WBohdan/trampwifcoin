@@ -1,0 +1,30 @@
+@import './shared.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: $nunito-font;
+  font-weight: 400;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
