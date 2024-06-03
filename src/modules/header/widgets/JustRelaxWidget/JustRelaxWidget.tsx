@@ -2,6 +2,7 @@ import styles from "./JustRelaxWidget.module.scss";
 import "./style.css";
 import { useEffect } from "react";
 import { GameQuestionIcon } from "@icons";
+import { Element } from "react-scroll";
 
 import img1 from "./images/img1.png";
 import img2 from "./images/img2.png";
@@ -115,147 +116,149 @@ const JustRelaxWidget = ({ setShowRocketAnimation }: IJustRelaxWidgetProps) => {
   return (
     <>
       <div className={styles["justRelaxWidget__whiteWidget"]} />
-      <div className={styles["justRelaxWidget"]}>
-        <p className={styles["justRelaxWidget__title"]}>
-          Let's jump on the <span>tramp</span>oline to space!
-        </p>
-        <p className={styles["justRelaxWidget__description"]}>
-          You have to find all the same stickers. Good luck:)
-        </p>
+      <Element name="game">
+        <div className={styles["justRelaxWidget"]}>
+          <p className={styles["justRelaxWidget__title"]}>
+            Let's jump on the <span>tramp</span>oline to space!
+          </p>
+          <p className={styles["justRelaxWidget__description"]}>
+            You have to find all the same stickers. Good luck:)
+          </p>
 
-        <button onClick={handleLaunch} />
+          <button onClick={handleLaunch} />
 
-        <ul className="cards">
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img1} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img2} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img8} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img7} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img8} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img1} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img6} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img6} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img7} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img3} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img4} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img5} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img4} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img3} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#FF482B" />
-            </div>
-            <div className="view back-view">
-              <img src={img5} alt="card-img" />
-            </div>
-          </li>
-          <li className="card">
-            <div className="view front-view">
-              <GameQuestionIcon color="#181538" />
-            </div>
-            <div className="view back-view">
-              <img src={img2} alt="card-img" />
-            </div>
-          </li>
-        </ul>
-      </div>
+          <ul className="cards">
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img1} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img2} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img8} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img7} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img8} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img1} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img6} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img6} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img7} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img3} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img4} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img5} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img4} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img3} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#FF482B" />
+              </div>
+              <div className="view back-view">
+                <img src={img5} alt="card-img" />
+              </div>
+            </li>
+            <li className="card">
+              <div className="view front-view">
+                <GameQuestionIcon color="#181538" />
+              </div>
+              <div className="view back-view">
+                <img src={img2} alt="card-img" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </Element>
     </>
   );
 };

@@ -16,6 +16,8 @@ import headerBgTramp from "./headerBg.webp";
 import trampInRocket from "./final.png";
 import trampoline from "./1t.png";
 import trampWithFlag from "./1.png";
+import trumpWithFlags from "./trumpWithFlags.webp";
+import trumpOnTrampoline from "./trumpOnTrampoline.webp";
 
 export {
   logo,
@@ -34,5 +36,7 @@ export {
   headerBgTramp,
   trampInRocket,
   trampoline,
-  trampWithFlag
+  trampWithFlag,
+  trumpWithFlags,
+  trumpOnTrampoline
 };

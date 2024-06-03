@@ -1,4 +1,4 @@
-import { trampWithFlag } from "@images";
+import { trampWithFlag, trumpWithFlags } from "@images";
 import styles from "./RocketAnimation.module.scss";
 import clsx from "clsx";
 import Lottie from "react-lottie";
@@ -45,7 +45,7 @@ const RocketAnimation = ({ setShowRocketAnimation }: IRocketAnimationProps) => {
       </div>
 
       <img
-        src={trampWithFlag}
+        src={trumpWithFlags}
         alt="Rocket"
         className={clsx(styles["rocketAnimation__img"], {
           [styles["launched"]]: startAnimation

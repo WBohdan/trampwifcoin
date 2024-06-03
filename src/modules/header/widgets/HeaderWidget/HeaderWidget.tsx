@@ -1,8 +1,10 @@
+import { Link } from "react-scroll";
+
 // ui
 import { Button } from "@ui";
 
 // assets
-import { trampoline } from "@images";
+import { trampoline, trumpOnTrampoline } from "@images";
 
 // styles
 import styles from "./HeaderWidget.module.scss";
@@ -17,10 +19,19 @@ const HeaderWidget = () => {
         </h1>
 
         <nav>
-          <li>HOME</li>
-          <li>TOKENOMIKS</li>
-          <li>GAME</li>
-          <li>CONTACT</li>
+          <li onClick={() => window.location.reload()}>HOME</li>
+
+          <Link to="tokenomics" smooth={true} duration={500}>
+            <li>TOKENOMIKS</li>
+          </Link>
+
+          <Link to="game" smooth={true} duration={500}>
+            <li>GAME</li>
+          </Link>
+
+          <Link to="join_us" smooth={true} duration={500}>
+            <li>JOIN US</li>
+          </Link>
         </nav>
       </div>
 
@@ -37,7 +48,7 @@ const HeaderWidget = () => {
             <Button text="Buy a ticket to the trampoline 🚀" />
           </div>
         </div>
-        <img src={trampoline} />
+        <img src={trumpOnTrampoline} />
       </div>
     </div>
   );
