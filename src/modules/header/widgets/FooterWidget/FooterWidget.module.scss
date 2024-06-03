@@ -5,6 +5,14 @@
     padding: 50px 7vw;
     display: flex;
     justify-content:space-between;
+
+    background-image: url('../../../../assets/images/output15.png');
+    background-position: center;
+
+    &__blueWidget{
+        height: 20px;
+        background-color: white;
+    }
     
 
     &__title {

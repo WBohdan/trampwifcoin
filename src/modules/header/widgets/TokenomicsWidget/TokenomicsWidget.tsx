@@ -11,10 +11,10 @@ const TokenomicsWidget = () => {
         <div className={styles["tokenomicsWidget__content"]}>
           <div>
             <p className={styles["tokenomicsWidget__description"]}>
-              The tokenomics of $Karton transcend conventional norms, shattering
+              The tokenomics of $TRAMP transcend conventional norms, shattering
               the traditional confines of degeneracy. Get ready for an exciting
               adventure as we reveal the captivating intricacies that define the
-              $Karton ecosystem.
+              $TRAMP ecosystem.
             </p>
 
             <p className={styles["tokenomicsWidget__descriptionItem"]}>

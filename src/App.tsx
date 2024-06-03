@@ -1,10 +1,15 @@
 import { useState } from "react";
 import RocketAnimation from "./components/RocketAnimation";
+
+// modules
 import {
   HeaderWidget,
   TokenomicsWidget,
-  JustRelaxWidget
-} from "./modules/header";
+  JustRelaxWidget,
+  FooterWidget
+} from "./modules/header/widgets";
+
+// styles
 import "./styles/styles.scss";
 
 function App() {
@@ -15,10 +20,7 @@ function App() {
       <HeaderWidget />
       <TokenomicsWidget />
       <JustRelaxWidget setShowRocketAnimation={setShowRocketAnimation} />
-      {/* <StickerPacksWidget /> */}
-      {/* <TokenomicsWidget />
-      <JustRelaxWidget />
-      <FooterWidget /> */}
+      <FooterWidget />
 
       {showRocketAnimation && (
         <RocketAnimation
