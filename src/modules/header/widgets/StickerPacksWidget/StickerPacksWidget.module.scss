@@ -2,11 +2,11 @@
 
 .stickerPacksWidget {
     width: 100vw;
-    background-color: $bgBrown;
+    background-color: #FFFFFF;
     padding: 100px 0;
 
     &__title {
-        color: $white;
+        color: #FF482B;
         font-size: 64px;
         font-weight: 800;
         text-align: center;
@@ -24,7 +24,7 @@
     &__item{
         // height: 269px;
         aspect-ratio: 1 / 1;
-        background-color: $white;
+        background-color: #FF482B;
         border-radius: 20px;
         display: flex;
         justify-content: center;

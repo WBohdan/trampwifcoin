@@ -14,7 +14,13 @@ import img8 from "./images2/img8.png";
 
 const test = [img1, img2, img3, img4, img5, img6, img7, img8];
 
-const JustRelaxWidget = () => {
+interface IJustRelaxWidgetProps {
+  setShowRocketAnimation: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const JustRelaxWidget = ({ setShowRocketAnimation }: IJustRelaxWidgetProps) => {
+  const handleLaunch = () => setShowRocketAnimation(true);
+
   useEffect(() => {
     const cards = document.querySelectorAll<HTMLDivElement>(".card");
 
@@ -50,11 +56,10 @@ const JustRelaxWidget = () => {
         matched++;
         if (matched === 8) {
           setTimeout(() => {
+            setShowRocketAnimation(true);
             return shuffleCard();
           }, 1000);
         }
-
-        console.log("REMOVING LISTENERS");
 
         cardOne?.removeEventListener("click", handleCardClick);
         cardTwo?.removeEventListener("click", handleCardClick);
@@ -109,10 +114,15 @@ const JustRelaxWidget = () => {
 
   return (
     <div className={styles["justRelaxWidget"]}>
-      <p className={styles["justRelaxWidget__title"]}>Just Relax and Play</p>
+      <p className={styles["justRelaxWidget__title"]}>
+        Let's launch a rocket into space!
+      </p>
       <p className={styles["justRelaxWidget__description"]}>
         You have to find all the same stickers. Good luck:)
       </p>
+
+      <button onClick={handleLaunch} />
+
       <ul className="cards">
         <li className="card">
           <div className="view front-view">

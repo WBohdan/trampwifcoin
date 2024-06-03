@@ -6,19 +6,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #FEFEED;
 
     &__title {
-        color: $bgBrown;
+        color: #181538;
         font-size: 64px;
         font-weight: 800;
         text-align: center;
         margin: 0 40px 15px;
+        max-width: 700px;
 
     }
 
     &__description {
         font-size: 18px;
-        color: $bgBrown;
+        color: #181538;
         font-weight: 600;
         margin: 0 40px 50px;
         text-align: center;

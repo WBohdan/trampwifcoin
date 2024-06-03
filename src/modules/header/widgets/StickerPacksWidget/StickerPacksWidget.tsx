@@ -1,36 +1,19 @@
-import { appLogo } from "@images";
 import styles from "./StickerPacksWidget.module.scss";
 
 const StickerPacksWidget = () => {
   return (
     <div className={styles["stickerPacksWidget"]}>
-      <p className={styles["stickerPacksWidget__title"]}>Stickers Packs</p>
+      <p className={styles["stickerPacksWidget__title"]}>Memes</p>
 
       <div className={styles["stickerPacksWidget__content"]}>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
-        <div className={styles["stickerPacksWidget__item"]}>
-          <img src={appLogo} />
-        </div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
+        <div className={styles["stickerPacksWidget__item"]}></div>
       </div>
     </div>
   );

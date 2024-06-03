@@ -12,6 +12,10 @@ import resistanceGirl from "./gameStickers/resistanceGirl.png";
 import steamPunkJulia from "./gameStickers/steamPunkJulia.png";
 import theVirus from "./gameStickers/theVirus.png";
 import utyaDuck from "./gameStickers/utyaDuck.png";
+import headerBgTramp from "./headerBg.webp";
+import trampInRocket from "./final.png";
+import trampoline from "./1t.png";
+import trampWithFlag from "./1.png";
 
 export {
   logo,
@@ -26,5 +30,9 @@ export {
   resistanceGirl,
   steamPunkJulia,
   theVirus,
-  utyaDuck
+  utyaDuck,
+  headerBgTramp,
+  trampInRocket,
+  trampoline,
+  trampWithFlag
 };

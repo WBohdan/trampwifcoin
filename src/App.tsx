@@ -1,20 +1,31 @@
+import { useState } from "react";
+import RocketAnimation from "./components/RocketAnimation";
 import {
   HeaderWidget,
-  StickerPacksWidget,
   TokenomicsWidget,
-  JustRelaxWidget,
-  FooterWidget
+  JustRelaxWidget
 } from "./modules/header";
 import "./styles/styles.scss";
 
 function App() {
+  const [showRocketAnimation, setShowRocketAnimation] = useState(false);
+
   return (
     <div>
       <HeaderWidget />
-      <StickerPacksWidget />
       <TokenomicsWidget />
+      <JustRelaxWidget setShowRocketAnimation={setShowRocketAnimation} />
+      {/* <StickerPacksWidget /> */}
+      {/* <TokenomicsWidget />
       <JustRelaxWidget />
-      <FooterWidget />
+      <FooterWidget /> */}
+
+      {showRocketAnimation && (
+        <RocketAnimation
+          showRocketAnimation={showRocketAnimation}
+          setShowRocketAnimation={setShowRocketAnimation}
+        />
+      )}
     </div>
   );
 }
