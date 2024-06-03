@@ -1,4 +1,4 @@
-import { trampWithFlag, trumpWithFlags } from "@images";
+import { trumpWithFlags } from "@images";
 import styles from "./RocketAnimation.module.scss";
 import clsx from "clsx";
 import Lottie from "react-lottie";

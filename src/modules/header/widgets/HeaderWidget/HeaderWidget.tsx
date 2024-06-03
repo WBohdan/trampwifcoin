@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { Button } from "@ui";
 
 // assets
-import { trampoline, trumpOnTrampoline } from "@images";
+import { trumpOnTrampoline } from "@images";
 
 // styles
 import styles from "./HeaderWidget.module.scss";
