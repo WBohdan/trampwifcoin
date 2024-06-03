@@ -2,7 +2,7 @@
 import { Button } from "@ui";
 
 // assets
-import { trampInRocket, trampoline } from "@images";
+import { trampoline } from "@images";
 
 // styles
 import styles from "./HeaderWidget.module.scss";
