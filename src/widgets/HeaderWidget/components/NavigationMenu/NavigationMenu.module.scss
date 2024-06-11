@@ -1,0 +1,150 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+    a {
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: #4943AC;
+        font-size: 16px;
+        font-weight: 200px;
+        font-weight: 700;
+        gap: 8px;
+        right: 40px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__menu {
+        width: 708px;
+        height: 48px;
+        background-color: #0a3161;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>div {
+            color: white;
+            padding: 0 15px;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    &__navBar {
+        width: 330px;
+        background-color: #0a3161;
+        border-radius: 5px;
+        margin-left: 40px;
+        display: none;
+
+
+        &Burger {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            height: 48px;
+            cursor: pointer;
+
+            &>span {
+                height: 2px;
+                width: 35px;
+                border-radius: 2px;
+                background-color: white;
+            }
+        }
+
+        &Content {
+            &>div {
+                color: white;
+                padding: 0 15px;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+                padding: 7px 0;
+                cursor: pointer;
+            }
+
+            padding-bottom: 5px;
+        }
+
+
+    }
+}
+
+@media (max-width: 1400px) {
+    .navigation {
+        &__menu {
+            width: 540px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .navigation {
+        &__menu {
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .navigation {
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        a {
+            top: 34px
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__navBar {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navigation {
+        &__navBar {
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        a {
+            right: 20px;
+        }
+
+        .navigation {
+            &__navBar {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .navigation {
+        &__navBar {
+            width: 110px;
+        }
+    }
+}

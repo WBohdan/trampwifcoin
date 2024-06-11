@@ -1,0 +1,185 @@
+@import '../../styles/shared.scss';
+
+
+.tokenomicsWidget {
+    padding: 100px 0;
+
+    h1 {
+        text-align: center;
+        font-size: 125px;
+        line-height: 125px;
+        font-family: $bevan;
+        color: #0A3161;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        height: 70px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0 50px;
+        font-size: 18px;
+        background-color: #3366FF;
+        width: min-content;
+        white-space: nowrap;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    &__carousel {
+        padding: 100px 0;
+    }
+
+    &__circle {
+        width: 300px;
+        height: 300px;
+        margin: 20px auto 50px;
+    }
+
+    &__progresses {
+        display: flex;
+        gap: 40px;
+        padding: 0 100px;
+        gap: 30px;
+        margin: 30px 0 0 0;
+    }
+
+    &__item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        &Circle {
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+            border-radius: 4px;
+        }
+
+        p {
+            font-family: $bevan;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+    }
+
+    &__buttonsRow{
+        padding: 100px 0;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+
+        & > div{ 
+            p {
+                font-family: $bevan;
+                font-size: 40px;
+                color: #252525;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1190px) {
+    .tokenomicsWidget {
+        &__item {
+            p {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .tokenomicsWidget {
+        &__item {
+            p {
+                font-size: 20px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .tokenomicsWidget {
+        h1 {
+            font-size: 66px;
+            line-height: 66px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .tokenomicsWidget {
+        &__progresses {
+            flex-direction: column;
+            padding-left: calc(100vw / 2 - 172px)
+        }
+
+        &__buttonsRow{
+            gap: 100px;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .tokenomicsWidget {
+        padding: 50px 0px;
+
+        h1 {
+            font-size: 33px;
+            line-height: 40px;
+        }
+
+        &__carousel {
+            padding: 20px 0;
+        }
+
+        &__buttonsRow{
+            padding: 30px 0;
+            gap: 75px;
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .tokenomicsWidget {
+        padding: 20px 0px;
+
+        &__buttonsRow{
+
+            padding: 30px 0;
+            gap: 25px;
+            flex-direction: column;
+
+            & > div {
+
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

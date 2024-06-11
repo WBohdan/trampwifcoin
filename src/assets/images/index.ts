@@ -1,42 +1,25 @@
-import logo from "./logo.png";
-import headerBg from "./headerBg.png";
-import appLogo from "./appLogo.png";
-import shapesBg from "./shapesBg.png";
-import whiteBgShape from "./whiteBgShape.png";
-
-import babyYoda from "./gameStickers/babyYoda.png";
-import cherry from "./gameStickers/cherry.png";
-import donutTheDog from "./gameStickers/donutTheDog.png";
-import harryGorilla from "./gameStickers/harryGorilla.png";
-import resistanceGirl from "./gameStickers/resistanceGirl.png";
-import steamPunkJulia from "./gameStickers/steamPunkJulia.png";
-import theVirus from "./gameStickers/theVirus.png";
-import utyaDuck from "./gameStickers/utyaDuck.png";
-import headerBgTramp from "./headerBg.webp";
-import trampInRocket from "./final.png";
-import trampoline from "./1t.png";
-import trampWithFlag from "./1.png";
-import trumpWithFlags from "./trumpWithFlags.webp";
-import trumpOnTrampoline from "./trumpOnTrampoline.webp";
+import coingecko from "./coingecko.png";
+import coinmarketcap from "./coinmarketcap.png";
+import favicon from "./favicon.png";
+import trumpOnRocket1 from "./trumpOnRocket1.jpg";
+import trumpOnRocket2 from "./trumpOnRocket2.jpg";
+import trumpOnRocket3 from "./trumpOnRocket3.jpg";
+import trumpOnRocket4 from "./trumpOnRocket4.jpg";
+import trumpOnRocket5 from "./trumpOnRocket5.jpg";
+import trumpOnRocket6 from "./trumpOnRocket6.jpg";
+import trumpOnRocket7 from "./trumpOnRocket7.jpg";
+import trumpOnRocket8 from "./trumpOnRocket8.jpg";
 
 export {
-  logo,
-  headerBg,
-  appLogo,
-  shapesBg,
-  whiteBgShape,
-  babyYoda,
-  cherry,
-  donutTheDog,
-  harryGorilla,
-  resistanceGirl,
-  steamPunkJulia,
-  theVirus,
-  utyaDuck,
-  headerBgTramp,
-  trampInRocket,
-  trampoline,
-  trampWithFlag,
-  trumpWithFlags,
-  trumpOnTrampoline
+  coingecko,
+  coinmarketcap,
+  favicon,
+  trumpOnRocket1,
+  trumpOnRocket2,
+  trumpOnRocket3,
+  trumpOnRocket4,
+  trumpOnRocket5,
+  trumpOnRocket6,
+  trumpOnRocket7,
+  trumpOnRocket8
 };

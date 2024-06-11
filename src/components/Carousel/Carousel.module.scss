@@ -1,0 +1,16 @@
+.carousel {
+    width: 630px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1400px){
+    .carousel {
+        width: 536px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        width: calc(100vw - 40px);
+    }
+}

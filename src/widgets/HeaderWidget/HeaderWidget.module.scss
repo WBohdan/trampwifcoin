@@ -1,0 +1,150 @@
+@import '../../styles/shared.scss';
+
+
+.headerWidget {
+    width: 100vw;
+    padding-bottom: 30px;
+
+    background-image: url('../../assets/images/whiteHouse.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    background-position: 50% 0;
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+
+    &__animation {
+        width: 612px;
+        height: 612px;
+        margin: 10px auto 0;
+    }
+
+    &__title {
+        width: 850px;
+        border-radius: 25px;
+        background-color: #0a3161;
+        color: white;
+        margin: 0 auto;
+        padding: 10px;
+
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 500;
+            font-family: $bevan;
+            text-align: center;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        margin: 0 auto;
+        width: min-content;
+        gap: 30px;
+        margin-top: 35px;
+        
+
+        &>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            width: 142px;
+            height: 62px;
+            border-radius: 100px;
+            background-color: #2974e0;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 0;
+
+            i {
+                padding-top: 2px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .headerWidget {
+        &__title {
+            width: 730px;
+
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .headerWidget {
+        &__title {
+            width: 609px;
+
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .headerWidget {
+        &__title {
+            width: 450px;
+
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .headerWidget {
+        &__animation {
+            width: 510px;
+            height: 510px;
+        }
+
+        &__title {
+            width: 510px;
+
+            h1 {
+                font-size: 25px;
+                line-height: 35px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .headerWidget {
+        &__animation {
+            width: 410px;
+            height: 410px;
+        }
+
+        &__title {
+            width: calc(100vw - 40px);
+            padding: 10px 15px;
+
+            h1 {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .headerWidget {
+        &__animation {
+            width: 350px;
+            height: 350px;
+        }
+    }
+}

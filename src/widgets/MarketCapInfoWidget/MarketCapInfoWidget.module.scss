@@ -1,0 +1,87 @@
+@import '../../styles/shared.scss';
+
+.marketCapInfoWidget {
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+    &__row {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 10px;
+        flex: 1;
+
+
+        &Title {
+            font-family: $bevan;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        &Count {
+            background-color: #0b3161;
+            font-size: 25px;
+            font-weight: 800;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size-adjust: 0.5;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__carousel{
+        background-color: #f7f7f7;
+        padding: 100px 0;
+    }
+
+}
+
+@media (max-width: 908px) {
+    .marketCapInfoWidget {
+        &__item {
+            &Count {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 764px) {
+    .marketCapInfoWidget {
+        padding: 20px 40px;
+
+        &__carousel{
+            // background-color: #f7f7f7;
+            padding: 20px 0;
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+    .marketCapInfoWidget {
+        &__row {
+            flex-direction: column
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .marketCapInfoWidget {
+        padding: 20px 20px;
+    }
+}
