@@ -20,8 +20,6 @@ interface IJustRelaxWidgetProps {
 }
 
 const JustRelaxWidget = ({ setShowRocketAnimation }: IJustRelaxWidgetProps) => {
-  const handleLaunch = () => setShowRocketAnimation(true);
-
   useEffect(() => {
     const cards = document.querySelectorAll<HTMLDivElement>(".card");
 
@@ -123,8 +121,6 @@ const JustRelaxWidget = ({ setShowRocketAnimation }: IJustRelaxWidgetProps) => {
           <p className={styles["justRelaxWidget__description"]}>
             You have to find all the same stickers. Good luck:)
           </p>
-
-          <button onClick={handleLaunch} />
 
           <ul className="cards">
             <li className="card">
