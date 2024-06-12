@@ -115,11 +115,8 @@ const RoadmapWidget = () => {
               <p className={styles["right__title"]}>Q2 2024</p>
 
               <div className={styles["right__block"]}>
-                <p>✅Launch of the project</p>
-                <p>✅DEX listing</p>
-                <p>✅TrumpWifHat community bot</p>
-                <p>✅TrumpWifHat NFT collection</p>
-                <p>Media press releases</p>
+                <p>✅ Launch of the project</p>
+                <p>✅ DEX listing</p>
               </div>
             </div>
           </div>
