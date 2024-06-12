@@ -4,14 +4,14 @@ import { useEffect } from "react";
 import { GameQuestionIcon } from "@icons";
 import { Element } from "react-scroll";
 
-import img1 from "./images/img1.png";
-import img2 from "./images/img2.png";
-import img3 from "./images/img3.png";
-import img4 from "./images/img4.png";
-import img5 from "./images/img5.png";
-import img6 from "./images/img6.png";
-import img7 from "./images/img7.png";
-import img8 from "./images/img8.png";
+import img1 from "./gifs/img1.gif";
+import img2 from "./gifs/img2.gif";
+import img3 from "./gifs/img3.gif";
+import img4 from "./gifs/img4.gif";
+import img5 from "./gifs/img5.gif";
+import img6 from "./gifs/img6.gif";
+import img7 from "./gifs/img7.gif";
+import img8 from "./gifs/img8.gif";
 
 const test = [img1, img2, img3, img4, img5, img6, img7, img8];
 

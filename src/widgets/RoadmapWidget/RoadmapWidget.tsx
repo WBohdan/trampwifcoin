@@ -16,11 +16,8 @@ const RoadmapWidget = () => {
               className={clsx(styles["roadmapWidget__block"], styles["left"])}
             >
               <div className={styles["left__block"]}>
-                <p>✅Launch of the project</p>
-                <p>✅DEX listing</p>
-                <p>✅TrumpWifHat community bot</p>
-                <p>✅TrumpWifHat NFT collection</p>
-                <p>Media press releases</p>
+                <p>✅ Launch of the project</p>
+                <p>✅ DEX listing</p>
               </div>
             </div>
             <div className={styles["roadmapWidget__line"]}>
