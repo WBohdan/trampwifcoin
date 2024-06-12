@@ -59,7 +59,7 @@ const NavigationMenu = () => {
         )}
       </div>
 
-      <a>
+      <a href="https://t.me/soltrumpwif" target="_blank">
         Join Telegram <TelegramIcon width={20} height={20} color="#4943AC" />
       </a>
     </div>

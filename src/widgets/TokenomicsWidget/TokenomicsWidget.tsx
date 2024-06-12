@@ -22,7 +22,14 @@ const TokenomicsWidget = () => {
       >
         <h1>TOKENOMICS</h1>
 
-        <div className={styles["tokenomicsWidget__button"]}>See Wallet</div>
+        <div className={styles["tokenomicsWidget__button"]}>
+          See Wallet{" "}
+          <i
+            className="fa fa-chevron-right"
+            aria-hidden={true}
+            style={{ fontSize: 14, fontWeight: 400 }}
+          ></i>
+        </div>
       </div>
 
       <div className={styles["tokenomicsWidget__carousel"]}>
@@ -39,12 +46,26 @@ const TokenomicsWidget = () => {
       <div className={styles["tokenomicsWidget__buttonsRow"]}>
         <div>
           <p>Token info</p>
-          <div className={styles["tokenomicsWidget__button"]}>Check here</div>
+          <div className={styles["tokenomicsWidget__button"]}>
+            Check here{" "}
+            <i
+              className="fa fa-chevron-right"
+              aria-hidden={true}
+              style={{ fontSize: 14, fontWeight: 400 }}
+            ></i>
+          </div>
         </div>
 
         <div>
           <p>Buy here</p>
-          <div className={styles["tokenomicsWidget__button"]}>Buy here</div>
+          <div className={styles["tokenomicsWidget__button"]}>
+            Buy here{" "}
+            <i
+              className="fa fa-chevron-right"
+              aria-hidden={true}
+              style={{ fontSize: 14, fontWeight: 400 }}
+            ></i>
+          </div>
         </div>
       </div>
 

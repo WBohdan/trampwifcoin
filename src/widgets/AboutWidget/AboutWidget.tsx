@@ -29,34 +29,11 @@ const AboutWidget = () => {
         className={styles["aboutWidget"]}
         style={{ backgroundColor: "white" }}
       >
-        {/* <p
-          className={styles["aboutWidget__paragraph"]}
-          style={{ marginBottom: "20px" }}
-        >
-          🚀TrumpWifHat's launch via TonRaffles Launchpad has oficially
-          finished!
-        </p>
-
-        <p className={styles["aboutWidget__paragraph"]}>
-          🎉 We're thrilled to announce that the authority of our token smart
-          contract has been revoked, ensuring transparency and security for all.
-          Plus, our team and marketing development tokens are locked, providing
-          further proof of our commitment to the project's success.
-        </p> */}
-        {/* 
-        <div className={styles["aboutWidget__buttons"]}>
-          <div className={styles["aboutWidget__button"]}>Authority revoked</div>
-          <div className={styles["aboutWidget__buttonLarge"]}>
-            LP tokens locked
-          </div>
-          <div className={styles["aboutWidget__button"]}>Tokens Locked</div>
-        </div> */}
-
         <div className={styles["aboutWidget__contractTitle"]}>
-          Contact address:
+          Contract address:
         </div>
         <p className={styles["aboutWidget__contract"]}>
-          EQDV3cbziPHz8wEcDYt-9iDOomlc3bFZQSx0WiZFCv7fh7oX
+          Will be added on this place soon
         </p>
       </div>
     </Element>

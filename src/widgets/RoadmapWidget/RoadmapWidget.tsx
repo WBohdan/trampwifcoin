@@ -91,7 +91,7 @@ const RoadmapWidget = () => {
             </div>
             <div className={styles["roadmapWidget__line"]}>
               <div className={styles["roadmapWidget__circle"]}>
-                <div className={styles["rightLine"]} />
+                <div className={styles["leftLine"]} />
               </div>
             </div>
             <div
@@ -118,13 +118,11 @@ const RoadmapWidget = () => {
               <p className={styles["right__title"]}>Q2 2024</p>
 
               <div className={styles["right__block"]}>
-                <p>Coinmarketcap</p>
-                <p>CoinGecko</p>
-                <p>Promotion</p>
-                <p>CEX listing</p>
-                <p>Social media marketing</p>
-                <p>Community events</p>
-                <p>Telegram game beta version</p>
+                <p>✅Launch of the project</p>
+                <p>✅DEX listing</p>
+                <p>✅TrumpWifHat community bot</p>
+                <p>✅TrumpWifHat NFT collection</p>
+                <p>Media press releases</p>
               </div>
             </div>
           </div>
@@ -186,8 +184,22 @@ const RoadmapWidget = () => {
           </div>
         </div>
         <div className={styles["roadmapButtons"]}>
-          <div>BUY Token</div>
-          <div>Chart</div>
+          <div>
+            BUY Token{" "}
+            <i
+              className="fa fa-chevron-right"
+              aria-hidden={true}
+              style={{ fontSize: 14, fontWeight: 400 }}
+            ></i>
+          </div>
+          <div>
+            Chart{" "}
+            <i
+              className="fa fa-chevron-right"
+              aria-hidden={true}
+              style={{ fontSize: 14, fontWeight: 400 }}
+            ></i>
+          </div>
         </div>
       </div>
     </Element>

@@ -33,34 +33,6 @@
         padding: 100px 150px;
     }
 
-    &__button {
-        height: 48px;
-        border-radius: 100px;
-        padding: 0 16px;
-        background-color: #3366FF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-        white-space: nowrap;
-    }
-
-    &__buttonLarge {
-        height: 77px;
-        border-radius: 100px;
-        background-color: #3366FF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        padding: 0 50px;
-        font-size: 22px;
-        cursor: pointer;
-        white-space: nowrap;
-    }
-
     &__contractTitle {
         height: 80px;
         background-color: #0A3161;
@@ -82,14 +54,6 @@
 
 }
 
-@media (max-width: 1280px) {
-    .aboutWidget {
-        &__buttons {
-            padding: 100px 0px;
-        }
-    }
-}
-
 @media (max-width: 1200px) {
     .aboutWidget {
         &__title {
@@ -99,19 +63,9 @@
     }
 }
 
-
-@media (max-width: 945px) {
-    .aboutWidget {
-        &__buttons {
-            flex-direction: column;
-            padding: 50px 0;
-        }
-    }
-}
-
 @media (max-width: 767px) {
     .aboutWidget {
-        padding: 20px 30px;
+        padding: 40px 30px;
 
         &__title {
             font-size: 33px;
@@ -132,6 +86,7 @@
     }
 
 }
+
 @media (max-width: 445px) {
     .aboutWidget {
         &__contractTitle {

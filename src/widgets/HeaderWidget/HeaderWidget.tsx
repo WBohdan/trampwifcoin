@@ -38,7 +38,7 @@ const HeaderWidget = () => {
             <i
               className="fa fa-chevron-right"
               aria-hidden={true}
-              style={{ color: "white", fontSize: 14, fontWeight: 400 }}
+              style={{ fontSize: 14, fontWeight: 400 }}
             ></i>
           </div>
           <div>
@@ -46,7 +46,7 @@ const HeaderWidget = () => {
             <i
               className="fa fa-chevron-right"
               aria-hidden={true}
-              style={{ color: "white", fontSize: 14, fontWeight: 400 }}
+              style={{ fontSize: 14, fontWeight: 400 }}
             ></i>
           </div>
         </div>

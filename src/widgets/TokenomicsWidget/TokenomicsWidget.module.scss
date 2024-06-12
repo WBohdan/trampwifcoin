@@ -10,7 +10,7 @@
         line-height: 125px;
         font-family: $bevan;
         color: #0A3161;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     &__button {
@@ -27,6 +27,23 @@
         white-space: nowrap;
         margin: 0 auto;
         cursor: pointer;
+        transition: all 0.10s linear;
+
+        i {
+            margin-left: 12px;
+            padding-top: 2px;
+            color: white;
+            transition: all 0.10s linear;
+        }
+
+        &:hover {
+            background-color: #EBEBEB;
+            color: black;
+
+            i {
+                color: black;
+            }
+        }
     }
 
     &__carousel {
@@ -36,7 +53,7 @@
     &__circle {
         width: 300px;
         height: 300px;
-        margin: 20px auto 50px;
+        margin: 0px auto 9ch;
     }
 
     &__progresses {
@@ -166,7 +183,7 @@
 
 @media (max-width: 500px) {
     .tokenomicsWidget {
-        padding: 20px 0px;
+        padding: 40px 0px;
 
         &__buttonsRow{
 

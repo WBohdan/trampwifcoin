@@ -115,11 +115,10 @@ const JustRelaxWidget = ({ setShowRocketAnimation }: IJustRelaxWidgetProps) => {
 
   return (
     <>
-      <div className={styles["justRelaxWidget__whiteWidget"]} />
       <Element name="game">
         <div className={styles["justRelaxWidget"]}>
           <p className={styles["justRelaxWidget__title"]}>
-            Let's jump on the <span>tramp</span>oline to space!
+            Just relax and play
           </p>
           <p className={styles["justRelaxWidget__description"]}>
             You have to find all the same stickers. Good luck:)
