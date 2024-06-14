@@ -43,10 +43,19 @@ const TokenomicsWidget = () => {
         />
       </div>
 
-      <div className={styles["tokenomicsWidget__buttonsRow"]}>
+      {/* <div className={styles["tokenomicsWidget__buttonsRow"]}>
         <div>
           <p>Token info</p>
-          <div className={styles["tokenomicsWidget__button"]}>
+          <div
+            onClick={() =>
+              window.open(
+                "https://solscan.io/token/DmHrv1bAz8Kep7EBL82cmUjucJ5n7UUSdAj7tMMdAoLP",
+                "_blank",
+                "noopener"
+              )
+            }
+            className={styles["tokenomicsWidget__button"]}
+          >
             Check here{" "}
             <i
               className="fa fa-chevron-right"
@@ -58,7 +67,16 @@ const TokenomicsWidget = () => {
 
         <div>
           <p>Buy here</p>
-          <div className={styles["tokenomicsWidget__button"]}>
+          <div
+            onClick={() =>
+              window.open(
+                "https://raydium.io/swap/?inputMint=sol&outputMint=DmHrv1bAz8Kep7EBL82cmUjucJ5n7UUSdAj7tMMdAoLP",
+                "_blank",
+                "noopener"
+              )
+            }
+            className={styles["tokenomicsWidget__button"]}
+          >
             Buy here{" "}
             <i
               className="fa fa-chevron-right"
@@ -67,9 +85,12 @@ const TokenomicsWidget = () => {
             ></i>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className={styles["tokenomicsWidget"]}>
+      <div
+        className={styles["tokenomicsWidget"]}
+        style={{ backgroundColor: "#f7f7f7" }}
+      >
         <div className={styles["tokenomicsWidget__circle"]}>
           <PieChart
             data={[

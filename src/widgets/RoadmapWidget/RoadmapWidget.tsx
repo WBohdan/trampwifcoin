@@ -178,7 +178,15 @@ const RoadmapWidget = () => {
           </div>
         </div>
         <div className={styles["roadmapButtons"]}>
-          <div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://raydium.io/swap/?inputMint=sol&outputMint=DmHrv1bAz8Kep7EBL82cmUjucJ5n7UUSdAj7tMMdAoLP",
+                "_blank",
+                "noopener"
+              )
+            }
+          >
             BUY Token{" "}
             <i
               className="fa fa-chevron-right"
@@ -186,7 +194,15 @@ const RoadmapWidget = () => {
               style={{ fontSize: 14, fontWeight: 400 }}
             ></i>
           </div>
-          <div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://dexscreener.com/solana/DmHrv1bAz8Kep7EBL82cmUjucJ5n7UUSdAj7tMMdAoLP",
+                "_blank",
+                "noopener"
+              )
+            }
+          >
             Chart{" "}
             <i
               className="fa fa-chevron-right"
