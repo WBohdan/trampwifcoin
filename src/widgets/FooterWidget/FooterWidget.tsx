@@ -37,7 +37,7 @@ const FooterWidget = () => {
             </div>
           </div>
 
-          <p
+          {/* <p
             className={styles["footerWidget__site"]}
             onClick={() =>
               window.open(
@@ -48,7 +48,7 @@ const FooterWidget = () => {
             }
           >
             https://trampwifcoin.vercel.app
-          </p>
+          </p> */}
         </div>
       </Element>
     </>
