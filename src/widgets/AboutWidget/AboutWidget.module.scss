@@ -42,6 +42,7 @@
         color: white;
         font-family: $bevan;
         font-size: 33px;
+      
     }
 
     &__contract {
@@ -50,6 +51,8 @@
         color: black;
         text-align: center;
         margin-top: 40px;
+        max-width: 100vw;
+        word-break: break-all;
     }
 
 }

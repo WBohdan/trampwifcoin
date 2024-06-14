@@ -22,14 +22,14 @@ const TokenomicsWidget = () => {
       >
         <h1>TOKENOMICS</h1>
 
-        <div className={styles["tokenomicsWidget__button"]}>
+        {/* <div className={styles["tokenomicsWidget__button"]}>
           See Wallet{" "}
           <i
             className="fa fa-chevron-right"
             aria-hidden={true}
             style={{ fontSize: 14, fontWeight: 400 }}
           ></i>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles["tokenomicsWidget__carousel"]}>

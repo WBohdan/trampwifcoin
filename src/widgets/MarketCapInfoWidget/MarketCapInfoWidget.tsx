@@ -18,7 +18,7 @@ const MarketCapInfoWidget = () => {
             </p>
 
             <div className={styles["marketCapInfoWidget__itemCount"]}>
-              1000, 0000, 0000
+              100, 000, 000
             </div>
           </div>
 
@@ -28,7 +28,7 @@ const MarketCapInfoWidget = () => {
             </p>
 
             <div className={styles["marketCapInfoWidget__itemCount"]}>
-              1000, 0000, 0000
+              100, 000, 000
             </div>
           </div>
 

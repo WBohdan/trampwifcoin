@@ -33,7 +33,7 @@ const AboutWidget = () => {
           Contract address:
         </div>
         <p className={styles["aboutWidget__contract"]}>
-          Will be added on this place soon
+          DmHrv1bAz8Kep7EBL82cmUjucJ5n7UUSdAj7tMMdAoLP
         </p>
       </div>
     </Element>
